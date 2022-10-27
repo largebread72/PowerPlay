@@ -12,7 +12,7 @@ public class BackTankDrive {
     public final Gamepad gamepad;
     public final int turnSensitivity;
     public final int encoderSteps; // TODO: find out what this number is
-    public final double wheelRadius; // in meters
+    public final double wheelRadius = 0.03; // in meters
 
     public BackTankDrive(Telemetry telemetry, DcMotor backLeftMotor, DcMotor backRightMotor, Gamepad gamepad, int turnSensitivity, int encoderSteps, double wheelRadius) {
         this.telemetry = telemetry;
